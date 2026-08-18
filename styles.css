@@ -22,9 +22,19 @@
   --light-text:    #0B0F14;
   --light-text-dim:#5B6472;
 
-  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
-  --font-body:    "Inter", system-ui, -apple-system, sans-serif;
-  --font-mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-display:  "Space Grotesk", "Segoe UI", sans-serif;
+  --font-body:     "Inter", "Segoe UI", sans-serif;
+  --font-mono:     "IBM Plex Mono", "SFMono-Regular", ui-monospace, monospace;
+
+  --text-900:      #111827;
+  --text-800:      #1F2937;
+  --text-700:      #374151;
+  --text-500:      #6B7280;
+  --text-400:      #9CA3AF;
+  --surface-soft:   #EEF4F3;
+  --surface-card:   #FFFFFF;
+  --line-soft:      #E6EBEF;
+  --shadow-soft:    0 8px 18px rgba(17, 24, 39, 0.04);
 
   --r-sm: 12px;
   --r-md: 14px;
@@ -66,13 +76,64 @@ button { font: inherit; cursor: pointer; }
 
 ::selection { background: var(--teal); color: var(--bg); }
 
-.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
 
 .display {
   font-family: var(--font-display);
   font-weight: 600;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   line-height: 1.08;
+}
+
+.section-title,
+.card-title,
+.plan-name,
+.step-card h3,
+.feat-card h3,
+.quote-name {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.metric-label,
+.label,
+.kpi-label,
+.plan-check,
+.footer-col h4,
+.desk-kpi-label,
+.desk-card-sub {
+  font-family: var(--font-body);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.kpi-value,
+.stat-value,
+.plan-price,
+.total,
+.desk-kpi-value,
+.desk-sale-amt,
+.quote-company,
+.footer-tag,
+.mini-proof-value {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.dashboard-shell,
+.dashboard-panel,
+.stat-card,
+.plan,
+.feat-card,
+.step-card,
+.quote,
+.faq-item {
+  box-shadow: var(--shadow-soft);
 }
 
 .container {
@@ -328,6 +389,75 @@ button:focus-visible {
 .chip-dot-live {
   background: var(--green);
   animation: pulse 2.4s var(--ease) infinite;
+}
+
+.hero-proof {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(110px, 1fr));
+  gap: 12px;
+  max-width: 520px;
+}
+.proof-pill {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(16, 21, 28, 0.85);
+  border: 1px solid rgba(35, 43, 54, 0.9);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+}
+.proof-number {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+.proof-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.brand-strip {
+  margin-top: 26px;
+  max-width: 580px;
+  padding: 14px 16px 16px;
+  border: 1px solid rgba(35, 43, 54, 0.9);
+  border-radius: 18px;
+  background: rgba(16, 21, 28, 0.7);
+}
+
+.brand-strip-label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.brand-strip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.brand-strip-row span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(35, 43, 54, 0.9);
+  color: var(--text-dim);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 /* ============================================================
@@ -603,6 +733,88 @@ button:focus-visible {
 /* ============================================================
    WHAT STOCK DESK IS FOR
    ============================================================ */
+.confidence {
+  background: linear-gradient(180deg, rgba(16,21,28,0.96), rgba(7,11,16,1));
+  padding: 96px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.confidence-head {
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+
+.confidence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.confidence-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 28px 24px 22px;
+  background: rgba(22, 28, 35, 0.9);
+  border: 1px solid rgba(35, 43, 54, 0.9);
+  border-radius: 22px;
+  box-shadow: 0 16px 42px -26px rgba(0, 0, 0, 0.8);
+}
+
+.confidence-card--highlight {
+  background: linear-gradient(180deg, rgba(22,192,170,0.12), rgba(22,192,170,0.04));
+  border-color: rgba(22,192,170,0.45);
+}
+
+.confidence-kicker {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.confidence-card h3 {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2vw, 26px);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.confidence-card p {
+  font-size: 15px;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
+.mini-proof {
+  margin-top: auto;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  width: fit-content;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.mini-proof-value {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.mini-proof-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+}
+
 .purpose {
   background: var(--light-bg);
   color: var(--light-text);
@@ -894,6 +1106,7 @@ button:focus-visible {
   position: relative;
   margin-top: 30px;
   animation: ctaPulse 3.6s var(--ease) infinite;
+  box-shadow: 0 10px 28px -12px rgba(242,169,59,.7);
 }
 .cta-note {
   position: relative;
@@ -994,6 +1207,7 @@ button:focus-visible {
   .hero { padding: 56px 0 80px; }
   .faq-inner { grid-template-columns: 1fr; gap: 36px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
+  .confidence-grid { grid-template-columns: 1fr; }
   .purpose-inner { grid-template-columns: 1fr; gap: 44px; }
   .steps-inner { grid-template-columns: 1fr; gap: 44px; }
   .step-card { width: 92%; }
