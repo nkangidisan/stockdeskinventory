@@ -561,7 +561,7 @@ button:focus-visible {
 
 .desk-kpis {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 .desk-kpi {
@@ -589,6 +589,9 @@ button:focus-visible {
   font-weight: 600;
   color: var(--text);
   white-space: nowrap;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* low-stock alert */
@@ -1853,9 +1856,9 @@ button:focus-visible {
   .proof-number { font-size: 0.95rem; }
   .proof-label { font-size: 10px; line-height: 1.3; }
 
-  /* desk KPI numbers must not clip inside their cards */
+  /* desk KPI numbers must fit without clipping or overflowing */
   .desk-kpi { padding: 10px 10px; }
-  .desk-kpi-value { font-size: clamp(15px, 4.5vw, 20px); }
+  .desk-kpi-value { font-size: clamp(13px, 4.6vw, 20px); }
 
   .footer-cols { gap: 24px; }
 
