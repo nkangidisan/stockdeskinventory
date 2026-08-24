@@ -53,6 +53,10 @@
     if (e.key === "Escape" && menu.classList.contains("is-open")) setMenu(false);
   });
 
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 820 && menu.classList.contains("is-open")) setMenu(false);
+  });
+
   /* ---------- hero: live counters + chart bars ---------- */
   var salesTotal = document.getElementById("salesTotal");
   var itemsSold = document.getElementById("itemsSold");
@@ -86,12 +90,12 @@
     var secondsSinceSync = 0;
 
     var pool = [
-      { item: "Plain gsm 20y", cat: "textiles", amt: 96000 },
-      { item: "Phone battery", cat: "repair", amt: 32000 },
-      { item: "Screen protector", cat: "repair", amt: 15000 },
-      { item: "Kikoy 4pcs", cat: "textiles", amt: 64000 },
-      { item: "Flex cable", cat: "repair", amt: 21000 },
-      { item: "Kitenge 6y", cat: "textiles", amt: 78000 }
+      { item: "Rice 5kg", cat: "groceries", amt: 32000 },
+      { item: "Cooking Oil 1L", cat: "groceries", amt: 12000 },
+      { item: "Sugar 2kg", cat: "groceries", amt: 14000 },
+      { item: "Omo Detergent", cat: "household", amt: 9500 },
+      { item: "Toilet Tissue 4pk", cat: "household", amt: 8000 },
+      { item: "Azam Soda 500ml", cat: "drinks", amt: 2500 }
     ];
     var poolIndex = 0;
 
