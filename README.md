@@ -1,8 +1,8 @@
 # StockDesk Inventory — Landing Page
 
-Marketing site for **StockDesk Inventory**, a sales and stock desk for retail shops. Starting in Uganda, priced in UGX, with MTN MoMo and Airtel Money billing.
+Marketing site for **StockDesk Inventory**, inventory and POS control for busy counters. Starting in Uganda, priced in UGX, with MTN MoMo and Airtel Money billing.
 
-- Site: [stockdeskinventory.com](https://stockdeskinventory.com)
+- Site: [www.stockdeskinventory.com](https://www.stockdeskinventory.com) (the apex domain redirects to `www`)
 - Product app: [app.stockdeskinventory.com](https://app.stockdeskinventory.com)
 
 ## Pages
@@ -13,7 +13,7 @@ Marketing site for **StockDesk Inventory**, a sales and stock desk for retail sh
 | `pricing.html` | Plans (Starter / Growth / Business) and pricing FAQ |
 | `privacy.html` | Privacy policy |
 | `terms.html` | Terms of service |
-| `404.html` | Not-found page (uses root-relative paths, so it works at any URL depth) |
+| `404.html` | Not-found page (root-relative paths, so it works at any URL depth; Vercel serves it automatically) |
 
 Shared assets: `styles.css`, `app.js`, `public/`. SEO files: `robots.txt`, `sitemap.xml`.
 
@@ -25,13 +25,17 @@ Shared assets: `styles.css`, `app.js`, `public/`. SEO files: `robots.txt`, `site
 
 ## Run locally
 
-Serve the folder with any static server, for example:
+Internal links use clean URLs (`/pricing`, `/privacy`, `/#faq`), so serve the folder with a static server that supports them, for example:
 
 ```bash
 npx serve .
 ```
 
-Or open `index.html` directly in a browser.
+Opening `index.html` straight from disk shows the page, but links between pages won't resolve.
+
+## Deploy
+
+Production is deployed by Vercel from `main` of [STOCKDESKLANDINGPAGE](https://github.com/mahadishaaqlubega/STOCKDESKLANDINGPAGE). `vercel.json` turns on `cleanUrls`, so `/pricing.html` redirects to `/pricing`; canonical tags and `sitemap.xml` use the clean URLs.
 
 ## Project structure
 
@@ -43,6 +47,7 @@ Or open `index.html` directly in a browser.
 ├── 404.html
 ├── robots.txt
 ├── sitemap.xml
+├── vercel.json
 ├── styles.css
 ├── app.js
 └── public/

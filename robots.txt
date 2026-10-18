@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://stockdeskinventory.com/sitemap.xml
+Sitemap: https://www.stockdeskinventory.com/sitemap.xml
