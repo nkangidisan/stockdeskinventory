@@ -1330,56 +1330,6 @@ button:focus-visible {
   margin-bottom: 28px;
 }
 
-.founders-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
-  gap: 16px;
-  margin-bottom: 20px;
-}
-.founder-card {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  padding: 18px 18px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: var(--surface);
-}
-.founder-avatar {
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.04em;
-  color: var(--bg);
-  background: linear-gradient(145deg, var(--teal), var(--teal-dim));
-}
-.founder-name {
-  font-family: var(--font-display);
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-}
-.founder-role {
-  margin-top: 4px;
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--teal);
-}
-.founder-bio {
-  margin-top: 8px;
-  font-size: 13.5px;
-  line-height: 1.5;
-  color: var(--text-dim);
-}
-
 .partner-card {
   display: flex;
   align-items: center;
@@ -1628,7 +1578,6 @@ button:focus-visible {
   .cta-actions { flex-direction: column; align-items: stretch; }
   .cta-actions .btn { width: 100%; }
 
-  .founders-grid { grid-template-columns: 1fr; }
   .partner-card { align-items: flex-start; padding: 12px 14px; gap: 12px; }
 
   /* round WhatsApp button, clear of the iOS home indicator */

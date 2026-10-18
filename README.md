@@ -9,7 +9,7 @@ Marketing site for **StockDesk Inventory**, inventory and POS control for busy c
 
 | File | Description |
 |------|-------------|
-| `index.html` | Home: hero with demo desk, product, how it works, roles, comparison, customers, pricing summary, FAQ, founders, CTA |
+| `index.html` | Home: hero with demo desk, product, how it works, roles, comparison, customers, pricing summary, FAQ, about, CTA |
 | `pricing.html` | Plans (Starter / Growth / Business) and pricing FAQ |
 | `privacy.html` | Privacy policy |
 | `terms.html` | Terms of service |
@@ -76,11 +76,6 @@ When updating the product screenshot, export it from a demo account (no real cus
 ## Collaboration
 
 Built in collaboration with [Grittrix Technologies](https://grittrix.com).
-
-## Founders
-
-- Mahad Ishaaq Lubega
-- Disan Nkangi
 
 ## License
 
