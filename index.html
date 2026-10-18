@@ -1,1540 +1,672 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      StockDesk Inventory | Run sales, stock, and staff from one cleaner
-      control surface
-    </title>
-    <meta
-      name="description"
-      content="StockDesk Inventory helps retail shops track sales, stock, and staff from one screen. Starting in Uganda, priced in UGX, from any phone."
-    />
-    <meta name="theme-color" content="#070B10" />
-    <link rel="canonical" href="https://stockdeskinventory.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="StockDesk Inventory" />
-    <meta property="og:url" content="https://stockdeskinventory.com/" />
-    <meta
-      property="og:title"
-      content="StockDesk Inventory | Run sales, stock, and staff from one screen"
-    />
-    <meta
-      property="og:description"
-      content="Live stock, a till that keeps moving, and role-aware access. Starting in Uganda, built for real retail counters."
-    />
-    <meta
-      property="og:image"
-      content="https://stockdeskinventory.com/public/image.png"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="StockDesk Inventory | Sales & stock for real retail shops"
-    />
-    <meta
-      name="twitter:description"
-      content="Live stock, a till that keeps moving, and role-aware access. Starting in Uganda."
-    />
-    <meta
-      name="twitter:image"
-      content="https://stockdeskinventory.com/public/image.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="public/logo.png" />
-    <link rel="apple-touch-icon" href="public/logo.png" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StockDesk Inventory | Inventory &amp; sales software for retail shops in Uganda</title>
+  <meta name="description" content="StockDesk Inventory helps retail shops track sales, stock, and staff from one screen. Starting in Uganda, priced in UGX, from any phone.">
+  <meta name="theme-color" content="#070B10">
+  <link rel="canonical" href="https://stockdeskinventory.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="StockDesk Inventory">
+  <meta property="og:url" content="https://stockdeskinventory.com/">
+  <meta property="og:title" content="StockDesk Inventory | Run sales, stock, and staff from one screen">
+  <meta property="og:description" content="Live stock, a fast till, and a login for every staff member. Starting in Uganda, priced in UGX.">
+  <meta property="og:image" content="https://stockdeskinventory.com/public/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="StockDesk Inventory: stop stockouts, track sales, run the shop from one screen">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="StockDesk Inventory | Sales &amp; stock for real retail shops">
+  <meta name="twitter:description" content="Live stock, a fast till, and a login for every staff member. Starting in Uganda.">
+  <meta name="twitter:image" content="https://stockdeskinventory.com/public/og-image.png">
+  <script>document.documentElement.className += " js";</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32.png">
+  <link rel="apple-touch-icon" href="public/apple-touch-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://stockdeskinventory.com/#org",
+        "name": "StockDesk Inventory",
+        "url": "https://stockdeskinventory.com/",
+        "logo": "https://stockdeskinventory.com/public/apple-touch-icon.png",
+        "email": "hello@stockdeskinventory.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+256742226839",
+          "contactType": "customer support",
+          "areaServed": "UG"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "StockDesk Inventory",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://app.stockdeskinventory.com/",
+        "publisher": { "@id": "https://stockdeskinventory.com/#org" },
+        "offers": [
+          { "@type": "Offer", "name": "Starter", "price": "15000", "priceCurrency": "UGX" },
+          { "@type": "Offer", "name": "Growth", "price": "30000", "priceCurrency": "UGX" },
+          { "@type": "Offer", "name": "Business", "price": "90000", "priceCurrency": "UGX" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-logo" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#16C0AA"/><path d="M16 5.5l9.5 5.2-9.5 5.2-9.5-5.2z" fill="#F2A93B"/><path d="M6.5 10.7l9.5 5.2v10.5l-9.5-5.2z" fill="#070B10"/><path d="M25.5 10.7L16 15.9v10.5l9.5-5.2z" fill="#0B4F47"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
 
-    <!-- ============ 1. NAV ============ -->
-    <header class="nav" id="nav">
-      <div class="nav-inner">
-        <a class="brand" href="#top" aria-label="StockDesk Inventory home">
-          <img
-            class="brand-logo"
-            src="public/logo.png"
-            alt=""
-            width="43"
-            height="30"
-          />
-          <span class="brand-name">StockDesk Inventory</span>
-        </a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        <nav class="nav-links" aria-label="Primary">
-          <a href="#product">Product</a>
-          <a href="#pillars">Why StockDesk</a>
-          <a href="#roles">Roles &amp; access</a>
-          <a href="#how-it-works">How it works</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="#faq">FAQ</a>
-        </nav>
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="StockDesk Inventory home">
+        <img class="brand-logo" src="public/logo.svg" alt="" width="30" height="30">
+        <span class="brand-name">StockDesk<span class="brand-name-suffix"> Inventory</span></span>
+      </a>
 
-        <div class="nav-actions">
-          <a class="nav-login" href="https://app.stockdeskinventory.com/login"
-            >Log in</a
-          >
-          <a
-            class="btn btn-cta nav-cta"
-            href="https://app.stockdeskinventory.com/signup"
-            >Start free</a
-          >
-          <button
-            class="nav-toggle"
-            id="navToggle"
-            aria-expanded="false"
-            aria-controls="navMenu"
-            aria-label="Menu"
-          >
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-      </div>
-
-      <nav class="nav-mobile" id="navMenu" aria-label="Mobile">
+      <nav class="nav-links" aria-label="Primary">
         <a href="#product">Product</a>
-        <a href="#pillars">Why StockDesk</a>
-        <a href="#roles">Roles &amp; access</a>
         <a href="#how-it-works">How it works</a>
+        <a href="#roles">Roles &amp; access</a>
+        <a href="#compare">Why StockDesk</a>
         <a href="pricing.html">Pricing</a>
         <a href="#faq">FAQ</a>
-        <div class="nav-mobile-actions">
-          <a
-            class="btn btn-cta"
-            href="https://app.stockdeskinventory.com/signup"
-            >Start free</a
-          >
-          <a
-            class="btn btn-ghost"
-            href="https://app.stockdeskinventory.com/login"
-            >Log in</a
-          >
-        </div>
       </nav>
-    </header>
 
-    <main id="main">
-      <!-- ============ 2. HERO ============ -->
-      <section class="hero" id="top">
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <p class="eyebrow hero-eyebrow">
-              StockDesk Inventory · Inventory &amp; sales for retail shops
-            </p>
-            <h1 class="display hero-title">
-              Stop stockouts. Track sales. Run the shop from one screen.
-            </h1>
-            <p class="hero-sub">
-              StockDesk Inventory helps busy retail shops know what sold,
-              what&rsquo;s running low, and what each staff member is doing,
-              all in real time, from any phone or till. Starting in Uganda,
-              priced in UGX.
-            </p>
+      <div class="nav-actions">
+        <a class="nav-login" href="https://app.stockdeskinventory.com/login">Log in</a>
+        <a class="btn btn-cta nav-cta" href="https://app.stockdeskinventory.com/signup" data-track="Signup" data-loc="nav">Start free</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
 
-            <div class="hero-ctas">
-              <a
-                class="btn btn-cta btn-lg"
-                href="https://app.stockdeskinventory.com/signup"
-                >Start free · no card</a
-              >
-              <a
-                class="btn btn-wa btn-lg"
-                href="https://wa.me/256742226839?text=Hi%20StockDesk%20%E2%80%94%20I%27d%20like%20to%20see%20how%20it%20works%20for%20my%20shop."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Chat on WhatsApp
-              </a>
-            </div>
+    <nav class="nav-mobile" id="navMenu" aria-label="Mobile">
+      <a href="#product">Product</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#roles">Roles &amp; access</a>
+      <a href="#compare">Why StockDesk</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <div class="nav-mobile-actions">
+        <a class="btn btn-cta" href="https://app.stockdeskinventory.com/signup" data-track="Signup" data-loc="menu">Start free</a>
+        <a class="btn btn-ghost" href="https://app.stockdeskinventory.com/login">Log in</a>
+      </div>
+    </nav>
+  </header>
 
-            <p class="hero-trust-note mono">
-              Setup in under 1 day · Free to start · Pay with MTN MoMo or Airtel Money
-            </p>
+  <main id="main">
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Inventory &amp; sales for retail shops</p>
+          <h1 class="display hero-title">Stop stockouts. Track sales. Run the shop from one screen.</h1>
+          <p class="hero-sub">StockDesk Inventory helps busy retail shops know what sold, what&rsquo;s running low, and what each staff member is doing, all in real time, from any phone or till. Starting in Uganda, priced in UGX.</p>
 
-            <ul class="status-chips" aria-label="System status">
-              <li class="chip">
-                <span class="chip-dot chip-dot-live" aria-hidden="true"></span>
-                POS · Sales ready
-                <span class="chip-live-label">Live</span>
-              </li>
-              <li class="chip">
-                <span class="chip-dot chip-dot-live" aria-hidden="true"></span>
-                Stock status · 24/7
-              </li>
-              <li class="chip">Business view</li>
+          <div class="hero-ctas">
+            <a class="btn btn-cta btn-lg" href="https://app.stockdeskinventory.com/signup" data-track="Signup" data-loc="hero">Start free &middot; no card</a>
+            <a class="btn btn-wa btn-lg" href="https://wa.me/256742226839?text=Hi%20StockDesk%20%E2%80%94%20I%27d%20like%20to%20see%20how%20it%20works%20for%20my%20shop." target="_blank" rel="noopener noreferrer" data-track="WhatsApp" data-loc="hero">
+              <svg class="wa-icon" width="18" height="18" aria-hidden="true"><use href="#i-wa"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+
+          <ul class="hero-points">
+            <li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg>Most shops sell the same day</li>
+            <li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg>No card to start</li>
+            <li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg>Pay with MTN MoMo or Airtel Money</li>
+          </ul>
+
+          <div class="hero-customers">
+            <span class="hero-customers-label">Already selling on StockDesk</span>
+            <ul class="hero-customers-list">
+              <li>GSM Technologies</li>
+              <li>Brinez Phone Repair</li>
             </ul>
+          </div>
+        </div>
 
-            <div class="hero-proof" aria-label="Business trust metrics">
-              <div class="proof-pill proof-pill--primary">
-                <span class="proof-number mono">UGX 15k</span>
-                <span class="proof-label">Starter plan</span>
+        <!-- DEMO DESK: illustrative data, animated by app.js -->
+        <figure class="desk" aria-label="Demo of the StockDesk desk showing today's sales, items sold, a low-stock alert, this week's sales, and recent sales">
+          <div class="desk-bar" aria-hidden="true">
+            <div class="desk-bar-brand">
+              <svg width="18" height="18"><use href="#i-logo"/></svg>
+              <span class="desk-shop">Your Shop &middot; Main till</span>
+              <span class="desk-demo mono">Demo</span>
+            </div>
+            <div class="desk-bar-right">
+              <span class="desk-role">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                Owner view
+              </span>
+              <span class="desk-sync mono">Synced <span id="syncAge">0s</span> ago</span>
+            </div>
+          </div>
+
+          <div class="desk-nav" aria-hidden="true">
+            <span class="desk-nav-item is-active">POS</span>
+            <span class="desk-nav-item">Stock</span>
+            <span class="desk-nav-item">Sales</span>
+            <span class="desk-nav-item">Reports</span>
+            <span class="desk-nav-item">Staff</span>
+          </div>
+
+          <div class="desk-body" aria-hidden="true">
+            <div class="desk-kpis">
+              <div class="desk-kpi desk-kpi--sales">
+                <span class="desk-kpi-label">Today&rsquo;s sales</span>
+                <span class="desk-kpi-value mono" id="salesTotal" data-count-to="1284500" data-prefix="UGX ">UGX 1,284,500</span>
               </div>
-              <div class="proof-pill">
-                <span class="proof-number mono">1 day</span>
-                <span class="proof-label">setup</span>
+              <div class="desk-kpi">
+                <span class="desk-kpi-label">Items sold</span>
+                <span class="desk-kpi-value mono" id="itemsSold" data-count-to="47">47</span>
               </div>
-              <div class="proof-pill">
-                <span class="proof-number mono">24/7</span>
-                <span class="proof-label">visibility</span>
+              <div class="desk-kpi">
+                <span class="desk-kpi-label">Open orders</span>
+                <span class="desk-kpi-value mono">2</span>
+              </div>
+              <div class="desk-kpi desk-kpi-low">
+                <span class="desk-kpi-label">Low stock</span>
+                <span class="desk-kpi-value mono">2</span>
               </div>
             </div>
 
-            <div class="brand-strip" aria-label="Customer trust proof">
-              <span class="brand-strip-label">Trusted by shops already on StockDesk</span>
-              <div class="brand-strip-row">
-                <span>GSM Technologies</span>
-                <span>Brinez Phone Repair</span>
-                <span>Fabric counters</span>
-                <span>Market shops</span>
+            <div class="desk-alert">
+              <svg class="desk-alert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 9v4m0 4h.01M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="mono"><strong>Sunrise Cooking Oil</strong> &middot; 3 left &middot; min 5</span>
+              <span class="desk-alert-msg">below reorder point</span>
+              <span class="desk-alert-btn">Reorder</span>
+            </div>
+
+            <div class="desk-columns">
+              <div class="desk-chart-card">
+                <div class="desk-card-head">
+                  <span class="desk-card-title">Sales this week</span>
+                  <span class="desk-card-sub mono">UGX &rsquo;000</span>
+                </div>
+                <div class="desk-bars">
+                  <div class="desk-bar-col"><span class="desk-bar-track"><i style="--h: 38%"></i></span><span class="desk-bar-day mono">Mon</span></div>
+                  <div class="desk-bar-col"><span class="desk-bar-track"><i style="--h: 52%"></i></span><span class="desk-bar-day mono">Tue</span></div>
+                  <div class="desk-bar-col"><span class="desk-bar-track"><i style="--h: 44%"></i></span><span class="desk-bar-day mono">Wed</span></div>
+                  <div class="desk-bar-col"><span class="desk-bar-track"><i style="--h: 61%"></i></span><span class="desk-bar-day mono">Thu</span></div>
+                  <div class="desk-bar-col"><span class="desk-bar-track"><i style="--h: 58%"></i></span><span class="desk-bar-day mono">Fri</span></div>
+                  <div class="desk-bar-col"><span class="desk-bar-track is-today"><i style="--h: 74%"></i></span><span class="desk-bar-day mono">Today</span></div>
+                </div>
+              </div>
+
+              <div class="desk-sales-card">
+                <div class="desk-card-head">
+                  <span class="desk-card-title">Recent sales &middot; UGX</span>
+                  <span class="desk-card-sub mono desk-card-live"><span class="chip-dot chip-dot-live"></span>Live</span>
+                </div>
+                <ol class="desk-sales" id="recentSales">
+                  <li><span class="mono desk-sale-item">Rice 5kg</span><span class="desk-sale-amt mono">32,000</span><span class="desk-sale-time mono">08:42</span></li>
+                  <li><span class="mono desk-sale-item">Cooking Oil 1L</span><span class="desk-sale-amt mono">12,000</span><span class="desk-sale-time mono">08:31</span></li>
+                  <li><span class="mono desk-sale-item">Sugar 2kg</span><span class="desk-sale-amt mono">14,000</span><span class="desk-sale-time mono">08:17</span></li>
+                  <li><span class="mono desk-sale-item">Omo Detergent</span><span class="desk-sale-amt mono">9,500</span><span class="desk-sale-time mono">07:58</span></li>
+                </ol>
               </div>
             </div>
           </div>
 
-          <!-- LIVE DASHBOARD CENTERPIECE (illustrative data) -->
-          <figure
-            class="desk"
-            aria-label="StockDesk Inventory live dashboard showing revenue, stock levels, and recent sales"
-          >
-            <div class="desk-bar">
-              <div class="desk-bar-brand">
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <rect width="32" height="32" rx="8" fill="#16C0AA" />
-                  <path
-                    d="M9 13h14M9 17h14M9 21h8"
-                    stroke="#070B10"
-                    stroke-width="2.6"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <span class="desk-shop">Your Shop · Main till</span>
-              </div>
-              <div class="desk-bar-right">
-                <span class="desk-role" title="Role-aware sign-in">
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  Owner view · + margin
-                </span>
-                <span class="desk-sync mono" id="syncStatus"
-                  >Synced <span id="syncAge">0s</span> ago</span
-                >
-              </div>
-            </div>
+          <figcaption class="desk-caption mono">Demo data &middot; this is how the desk moves when the till rings</figcaption>
+        </figure>
+      </div>
+    </section>
 
-            <div class="desk-nav" aria-hidden="true">
-              <span class="desk-nav-item is-active">POS</span>
-              <span class="desk-nav-item">Stock</span>
-              <span class="desk-nav-item">Sales</span>
-              <span class="desk-nav-item">Reports</span>
-              <span class="desk-nav-item">Staff</span>
-            </div>
+    <!-- ============ 2. PRODUCT ============ -->
+    <section class="product" id="product" aria-labelledby="product-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">What StockDesk is for</p>
+          <h2 class="display section-title" id="product-title">Built around a till, not around a dashboard.</h2>
+          <p class="section-sub">Most inventory software is built for accountants. StockDesk is built for the person standing at the counter. The same screen that rings up a sale also tells you what to reorder, so nothing gets re-typed at closing time.</p>
+        </div>
 
-            <div class="desk-body">
-              <div class="desk-kpis">
-                <div class="desk-kpi">
-                  <span class="desk-kpi-label">Today&rsquo;s sales</span>
-                  <span
-                    class="desk-kpi-value mono"
-                    id="salesTotal"
-                    data-count-to="1200000"
-                    >UGX&nbsp;0</span
-                  >
-                </div>
-                <div class="desk-kpi">
-                  <span class="desk-kpi-label">Items sold</span>
-                  <span
-                    class="desk-kpi-value mono"
-                    id="itemsSold"
-                    data-count-to="32"
-                    >0</span
-                  >
-                </div>
-                <div class="desk-kpi">
-                  <span class="desk-kpi-label">Open orders</span>
-                  <span class="desk-kpi-value mono" id="openOrders">2</span>
-                </div>
-                <div class="desk-kpi desk-kpi-low">
-                  <span class="desk-kpi-label">Low stock</span>
-                  <span class="desk-kpi-value mono" id="lowStock">2</span>
-                </div>
-              </div>
+        <div class="feat-grid">
+          <article class="feat-card reveal" style="--reveal-delay: 0ms">
+            <span class="feat-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3l9 5-9 5-9-5 9-5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 13l9 5 9-5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 17.5l9 5 9-5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Live inventory</h3>
+            <p>Every sale moves stock the moment it happens, so you know what&rsquo;s on the shelf without walking to check.</p>
+          </article>
 
-              <div class="desk-alert" role="status">
-                <svg
-                  class="desk-alert-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M12 9v4m0 4h.01M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <span class="mono"
-                  ><strong>Sunrise Cooking Oil</strong> · 3 left · min 5</span
-                >
-                <span class="desk-alert-msg">below reorder point</span>
-                <button class="desk-alert-btn" type="button">Reorder</button>
-              </div>
+          <article class="feat-card feat-card--amber reveal" style="--reveal-delay: 80ms">
+            <span class="feat-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 3h12v18l-2-1.5L14 21l-2-1.5L10 21l-2-1.5L6 21V3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 8h5M9.5 12h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Fast checkout</h3>
+            <p>Ring up sales from a phone or till without switching screens. The day&rsquo;s totals add themselves.</p>
+          </article>
 
-              <div class="desk-columns">
-                <div class="desk-chart-card">
-                  <div class="desk-card-head">
-                    <span class="desk-card-title">Sales this week</span>
-                    <span class="desk-card-sub mono">UGX &rsquo;000</span>
-                  </div>
-                  <div class="desk-bars" id="weekBars" aria-hidden="true">
-                    <div class="desk-bar-col">
-                      <span class="desk-bar-track"
-                        ><i style="--h: 38%"></i></span
-                      ><span class="desk-bar-day mono">Mon</span>
-                    </div>
-                    <div class="desk-bar-col">
-                      <span class="desk-bar-track"
-                        ><i style="--h: 52%"></i></span
-                      ><span class="desk-bar-day mono">Tue</span>
-                    </div>
-                    <div class="desk-bar-col">
-                      <span class="desk-bar-track"
-                        ><i style="--h: 44%"></i></span
-                      ><span class="desk-bar-day mono">Wed</span>
-                    </div>
-                    <div class="desk-bar-col">
-                      <span class="desk-bar-track"
-                        ><i style="--h: 61%"></i></span
-                      ><span class="desk-bar-day mono">Thu</span>
-                    </div>
-                    <div class="desk-bar-col">
-                      <span class="desk-bar-track"
-                        ><i style="--h: 58%"></i></span
-                      ><span class="desk-bar-day mono">Fri</span>
-                    </div>
-                    <div class="desk-bar-col">
-                      <span class="desk-bar-track is-today"
-                        ><i style="--h: 74%"></i></span
-                      ><span class="desk-bar-day mono">Today</span>
-                    </div>
-                  </div>
-                </div>
+          <article class="feat-card reveal" style="--reveal-delay: 160ms">
+            <span class="feat-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.6"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M16 3.6a3.2 3.2 0 010 6.3M16.5 14.6c2.1.7 3.5 2.5 4 4.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Staff roles</h3>
+            <p>Owners, cashiers, and stockists each sign in with their own login and see only what their job needs.</p>
+          </article>
 
-                <div class="desk-sales-card">
-                  <div class="desk-card-head">
-                    <span class="desk-card-title">Recent sales</span>
-                    <span class="desk-card-sub mono desk-card-live"
-                      ><span
-                        class="chip-dot chip-dot-live"
-                        aria-hidden="true"
-                      ></span
-                      >Live</span
-                    >
-                  </div>
-                  <ol class="desk-sales" id="recentSales">
-                    <li>
-                      <span class="mono desk-sale-item">Rice 5kg</span
-                      ><span class="desk-sale-cat mono">groceries</span
-                      ><span class="desk-sale-amt mono">UGX 32,000</span
-                      ><span class="desk-sale-time mono">08:42</span>
-                    </li>
-                    <li>
-                      <span class="mono desk-sale-item">Cooking Oil 1L</span
-                      ><span class="desk-sale-cat mono">groceries</span
-                      ><span class="desk-sale-amt mono">UGX 12,000</span
-                      ><span class="desk-sale-time mono">08:31</span>
-                    </li>
-                    <li>
-                      <span class="mono desk-sale-item">Sugar 2kg</span
-                      ><span class="desk-sale-cat mono">groceries</span
-                      ><span class="desk-sale-amt mono">UGX 14,000</span
-                      ><span class="desk-sale-time mono">08:17</span>
-                    </li>
-                    <li>
-                      <span class="mono desk-sale-item">Omo Detergent</span
-                      ><span class="desk-sale-cat mono">household</span
-                      ><span class="desk-sale-amt mono">UGX 9,500</span
-                      ><span class="desk-sale-time mono">07:58</span>
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
+          <article class="feat-card feat-card--amber reveal" style="--reveal-delay: 240ms">
+            <span class="feat-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9a6 6 0 1112 0c0 5 2 6 2 6H4s2-1 2-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10.3 19a2 2 0 003.4 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Low-stock alerts</h3>
+            <p>Set a minimum for each item. When stock drops below it, you know before a customer asks.</p>
+          </article>
+        </div>
 
-            <figcaption class="desk-caption mono">
-              Live desk · everything above moves as the till moves
+        <figure class="shot reveal">
+          <div class="shot-bar">
+            <span class="shot-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="shot-title mono">app.stockdeskinventory.com</span>
+          </div>
+          <picture>
+            <source type="image/webp" srcset="public/image-960.webp 960w, public/image.webp 1915w" sizes="(max-width: 1160px) 100vw, 1112px">
+            <img src="public/image.png" alt="StockDesk Inventory owner dashboard showing revenue, stock levels, a weekly sales chart, and low-stock alerts" width="1915" height="910" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 3. HOW IT WORKS ============ -->
+    <section class="steps" id="how-it-works" aria-labelledby="steps-title">
+      <div class="container steps-inner">
+        <div class="steps-copy">
+          <p class="eyebrow">How it works</p>
+          <h2 class="display section-title" id="steps-title">Ring your first sale the same day.</h2>
+          <p class="section-sub">Three steps. Most shops are selling on their own till the same day they sign up.</p>
+          <a class="btn btn-cta steps-cta" href="https://app.stockdeskinventory.com/signup" data-track="Signup" data-loc="steps">Start free</a>
+        </div>
+
+        <ol class="step-cards">
+          <li class="step-card reveal" style="--reveal-delay: 0ms">
+            <span class="step-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 10l1.5-5h13L20 10" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M5 10v9a1 1 0 001 1h12a1 1 0 001-1v-9" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 20v-5h6v5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <span class="step-num mono">Step 1</span>
+            <h3>Set up your shop</h3>
+            <p>Add your products, staff, and shop details. Start with what you sell most and add the rest as you go.</p>
+          </li>
+
+          <li class="step-card step-card--amber reveal" style="--reveal-delay: 100ms">
+            <span class="step-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2.5-6 4 12L16 12h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="step-num mono">Step 2</span>
+            <h3>Sell and track live</h3>
+            <p>Every sale and stock movement updates the desk automatically. No end-of-day recount.</p>
+          </li>
+
+          <li class="step-card reveal" style="--reveal-delay: 200ms">
+            <span class="step-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9a6 6 0 1112 0c0 5 2 6 2 6H4s2-1 2-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10.3 19a2 2 0 003.4 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <span class="step-num mono">Step 3</span>
+            <h3>Act on alerts</h3>
+            <p>See what&rsquo;s low and what&rsquo;s moving, and reorder before it turns into a lost sale.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 4. ROLES & BRANCHES ============ -->
+    <section class="roles" id="roles" aria-labelledby="roles-title">
+      <div class="container">
+        <div class="section-head roles-head">
+          <p class="eyebrow">Role-based access</p>
+          <h2 class="display section-title" id="roles-title">Everyone sees the right thing. Nobody sees too much.</h2>
+          <p class="section-sub">Every staff member signs in with their own login and gets a view matched to their job: owner, cashier, or stockist. No shared passwords, and every sale is tied to the person who made it.</p>
+        </div>
+
+        <div class="roles-grid reveal">
+          <article class="role-card role-card--owner">
+            <span class="role-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Owner / Admin</h3>
+            <p>The full picture: cost, margin, all branches, every staff member, and the complete books. Only the owner sees what stock cost and what the shop made on it.</p>
+            <ul class="role-list">
+              <li>Cost, margin &amp; profit</li>
+              <li>All locations &amp; staff</li>
+              <li>Full reports &amp; permissions</li>
+            </ul>
+          </article>
+
+          <article class="role-card role-card--cashier">
+            <span class="role-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 3h12v18l-2-1.5L14 21l-2-1.5L10 21l-2-1.5L6 21V3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 8h5M9.5 12h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Cashier</h3>
+            <p>Just the till: ring sales fast and see the day&rsquo;s totals. A cashier can&rsquo;t change prices or see what the shop paid for stock.</p>
+            <ul class="role-list">
+              <li>Ring sales &amp; issue receipts</li>
+              <li>See stock levels to sell</li>
+              <li>No cost or margin</li>
+            </ul>
+          </article>
+
+          <article class="role-card role-card--stockist">
+            <span class="role-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 10l1.5-5h13L20 10" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M5 10v9a1 1 0 001 1h12a1 1 0 001-1v-9" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 20v-5h6v5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Stockist</h3>
+            <p>Keeps the shelves honest: receives goods, records purchases, and fixes stock levels, without touching the till or the money.</p>
+            <ul class="role-list">
+              <li>Receive stock &amp; purchases</li>
+              <li>Adjust inventory levels</li>
+              <li>No till or cash access</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="branches reveal">
+          <div class="branches-copy">
+            <p class="eyebrow branches-eyebrow">Multi-location</p>
+            <h3 class="branches-title">One account. Every branch you run.</h3>
+            <p class="branches-text">Own several shops? StockDesk Inventory keeps them all under one account, each with its own till, stock, staff, and roles. See every branch from the owner view, or give staff access to just their own branch. Add a location whenever the shop grows.</p>
+          </div>
+          <ul class="branches-list">
+            <li><span class="branch-check" aria-hidden="true"><svg width="12" height="12"><use href="#i-check"/></svg></span>Separate till, stock &amp; roles per location</li>
+            <li><span class="branch-check" aria-hidden="true"><svg width="12" height="12"><use href="#i-check"/></svg></span>Compare sales across every branch</li>
+            <li><span class="branch-check" aria-hidden="true"><svg width="12" height="12"><use href="#i-check"/></svg></span>One bill, not one per till</li>
+            <li><span class="branch-check" aria-hidden="true"><svg width="12" height="12"><use href="#i-check"/></svg></span>Up to 3 locations on Growth, unlimited on Business</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. WHY STOCKDESK ============ -->
+    <section class="compare" id="compare" aria-labelledby="compare-title">
+      <div class="container">
+        <div class="section-head compare-head">
+          <p class="eyebrow">Why StockDesk</p>
+          <h2 class="display section-title" id="compare-title">Why shops leave the receipt book behind.</h2>
+        </div>
+        <div class="compare-table-wrap reveal">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th scope="col">At the counter</th>
+                <th scope="col">Receipt book / spreadsheet</th>
+                <th scope="col">StockDesk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Know what is left</th><td>Count at closing, if you remember</td><td>Live stock with every sale</td></tr>
+              <tr><th scope="row">Low stock</th><td>Customer asks, shelf is empty</td><td>Alert before you run out</td></tr>
+              <tr><th scope="row">Who sold what</th><td>Shared book, unclear</td><td>Each staff member has their own login</td></tr>
+              <tr><th scope="row">Day totals</th><td>Added by hand, easy to miss</td><td>UGX totals as you ring</td></tr>
+              <tr><th scope="row">Owner away from the shop</th><td>Wait for a call or a photo</td><td>Check from any phone</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. CUSTOMERS ============ -->
+    <section class="voices" id="voices" aria-labelledby="voices-title">
+      <div class="container">
+        <div class="section-head voices-head">
+          <p class="eyebrow">From the shop floor</p>
+          <h2 class="display section-title" id="voices-title">What the people behind the counters say.</h2>
+        </div>
+
+        <div class="quotes reveal">
+          <figure class="quote">
+            <span class="quote-tag mono">Phone &amp; accessory shop</span>
+            <blockquote>
+              <p>&ldquo;We used to close some evenings not knowing if we&rsquo;d made money or lost it. Now the numbers are just there, updated as we sell. It&rsquo;s changed how confidently we make decisions at GSM Technologies.&rdquo;</p>
+            </blockquote>
+            <figcaption>
+              <span class="quote-name">Matovu Jabber Saidi</span>
+              <span class="quote-company">GSM Technologies</span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote">
+            <span class="quote-tag mono">Repair &amp; parts counter</span>
+            <blockquote>
+              <p>&ldquo;Phones and parts move fast, and mistakes used to cost us real money. With StockDesk, stock and checkout stay in sync without anyone chasing it manually. It runs quietly in the background and just works.&rdquo;</p>
+            </blockquote>
+            <figcaption>
+              <span class="quote-name">Nkalubo Ibra</span>
+              <span class="quote-company">Brinez Phone Repair Services</span>
             </figcaption>
           </figure>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ============ 4. PRODUCT DEEP-DIVE ============ -->
-      <section class="deep" id="product">
-        <div class="container">
-          <div class="section-head">
-            <p class="eyebrow">What the desk shows you</p>
-            <h2 class="display section-title">
-              The one screen that keeps your shop running.
-            </h2>
-            <p class="section-sub">
-              No spreadsheets to re-enter at closing time. StockDesk Inventory
-              keeps your sales, stock, and low-stock alerts moving together so
-              you can act before a product disappears from the shelf.
-            </p>
-          </div>
-
-          <dl class="stats">
-            <div class="stat stat-teal reveal">
-              <dt>Today&rsquo;s sales</dt>
-              <dd
-                class="mono stat-value"
-                data-count-to="1200000"
-                data-prefix="UGX "
-              >
-                UGX 0
-              </dd>
-              <dd class="stat-note">rung on the till, not typed in later</dd>
-            </div>
-            <div class="stat stat-green reveal">
-              <dt>Items sold today</dt>
-              <dd class="mono stat-value" data-count-to="32">0</dd>
-              <dd class="stat-note">each one moved stock automatically</dd>
-            </div>
-            <div class="stat stat-blue reveal">
-              <dt>SKUs tracked</dt>
-              <dd class="mono stat-value" data-count-to="1800">0</dd>
-              <dd class="stat-note">across every item you sell</dd>
-            </div>
-            <div class="stat stat-red reveal">
-              <dt>Low-stock SKUs</dt>
-              <dd class="mono stat-value" data-count-to="2">0</dd>
-              <dd class="stat-note">Sunrise Cooking Oil: 3 left · min 5 · reorder now</dd>
-            </div>
-          </dl>
-
-          <div class="deep-banner reveal">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              aria-hidden="true"
-            >
-              <path
-                d="M12 9v4m0 4h.01M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <p class="mono">
-              <strong>Sunrise Cooking Oil</strong> is 3 left against a minimum
-              of 5. StockDesk Inventory raised the alert the moment the 5th
-              bottle sold, before a customer asked for it.
-            </p>
-          </div>
-
-          <!-- real product screenshot, framed in a browser-style card -->
-          <div class="shots">
-            <figure class="shot reveal">
-              <div class="shot-bar">
-                <span class="shot-dots" aria-hidden="true"
-                  ><i></i><i></i><i></i
-                ></span>
-                <span class="shot-title mono">StockDesk Inventory</span>
-              </div>
-              <img
-                src="public/image.png"
-                alt="StockDesk Inventory sales and stock dashboard showing low-stock alerts and product list"
-                width="1915"
-                height="910"
-                loading="lazy"
-                decoding="async"
-              />
-            </figure>
-          </div>
+    <!-- ============ 7. PRICING SUMMARY ============ -->
+    <section class="plans-teaser" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Pricing</p>
+          <h2 class="display section-title" id="pricing-title">Simple monthly plans in UGX.</h2>
+          <p class="section-sub">Start free with no card and no setup fees. Pay with MTN MoMo or Airtel Money, and move up a plan when the shop grows.</p>
         </div>
-      </section>
 
-      <section class="confidence" aria-labelledby="confidence-title">
-        <div class="container">
-          <div class="section-head confidence-head">
-            <p class="eyebrow">Why owners switch</p>
-            <h2 class="display section-title" id="confidence-title">
-              A cleaner system for a busier counter.
-            </h2>
-          </div>
-
-          <div class="confidence-grid reveal">
-            <article class="confidence-card">
-              <span class="confidence-kicker mono">Stockouts avoided</span>
-              <h3>Know what is running low before the customer does.</h3>
-              <p>
-                Alerts trigger automatically when a product slips under minimum
-                stock, so the reorder decision happens before it becomes a lost
-                sale.
-              </p>
-              <div class="mini-proof">
-                <span class="mini-proof-value mono">3 left</span>
-                <span class="mini-proof-label">Sunrise Cooking Oil</span>
-              </div>
-            </article>
-
-            <article class="confidence-card confidence-card--highlight">
-              <span class="confidence-kicker mono">Time saved</span>
-              <h3>Stop chasing numbers across sheets and receipts.</h3>
-              <p>
-                Sales, stock, and staff activity update in the same place, so the
-                owner spends less time reconciling and more time making better
-                decisions.
-              </p>
-              <div class="mini-proof">
-                <span class="mini-proof-value mono">3 hrs</span>
-                <span class="mini-proof-label">saved weekly</span>
-              </div>
-            </article>
-
-            <article class="confidence-card">
-              <span class="confidence-kicker mono">Margin clarity</span>
-              <h3>See what moves, what sits, and what needs attention.</h3>
-              <p>
-                Clear product and sales visibility makes pricing decisions easier
-                and helps profitable items rise above the noise.
-              </p>
-              <div class="mini-proof">
-                <span class="mini-proof-value mono">+18%</span>
-                <span class="mini-proof-label">average margin visibility</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ 5. WHAT STOCK DESK IS FOR ============ -->
-      <section class="results" aria-labelledby="results-title">
-        <div class="container">
-          <div class="section-head results-head">
-            <p class="eyebrow">Results that matter</p>
-            <h2 class="display section-title" id="results-title">
-              The shop stops guessing and starts seeing.
-            </h2>
-          </div>
-
-          <div class="results-grid reveal">
-            <article class="result-card">
-              <span class="result-metric mono">8h</span>
-              <h3>Saved each week</h3>
-              <p>Less time on reconciliation means more time on the floor and better customer service.</p>
-            </article>
-
-            <article class="result-card result-card--accent">
-              <span class="result-metric mono">3x</span>
-              <h3>Faster stock checks</h3>
-              <p>See what is low, what sold, and what needs reorder without chasing paper or spreadsheets.</p>
-            </article>
-
-            <article class="result-card">
-              <span class="result-metric mono">1</span>
-              <h3>Single source of truth</h3>
-              <p>Sales, stock, and staff activity all line up in one clean view instead of many disconnected tools.</p>
-            </article>
-
-            <article class="result-card result-card--dark">
-              <span class="result-metric mono">0</span>
-              <h3>Surprise stockouts</h3>
-              <p>Alerts trigger before the customer asks and before the item leaves the shelf for good.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="purpose" id="pillars">
-        <div class="container purpose-inner">
-          <div class="purpose-copy">
-            <p class="eyebrow">What StockDesk Inventory is for</p>
-            <h2 class="display purpose-title">
-              Built around a till, not around a dashboard.
-            </h2>
-            <p class="purpose-sub">
-              Most inventory software is built for accountants. StockDesk is
-              built for the person standing at the counter, so the same
-              system that rings up a sale also tells you what to reorder,
-              without extra steps in between.
-            </p>
-            <a
-              class="btn btn-cta purpose-cta"
-              href="https://app.stockdeskinventory.com/signup"
-              >Start free</a
-            >
-          </div>
-
-          <div class="purpose-grid">
-            <article class="feat-card reveal" style="--reveal-delay: 0ms">
-              <span class="feat-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M12 3l9 5-9 5-9-5 9-5z"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3 13l9 5 9-5"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3 17.5l9 5 9-5"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <h3>Live Inventory</h3>
-              <p>Know what&rsquo;s on the shelf without walking to check.</p>
-            </article>
-
-            <article
-              class="feat-card feat-card--amber reveal"
-              style="--reveal-delay: 100ms"
-            >
-              <span class="feat-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M6 3h12v18l-2-1.5L14 21l-2-1.5L10 21l-2-1.5L6 21V3z"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M9.5 8h5M9.5 12h5"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <h3>Fast Checkout</h3>
-              <p>
-                Ring up sales without switching screens or systems.
-              </p>
-            </article>
-
-            <article class="feat-card reveal" style="--reveal-delay: 200ms">
-              <span class="feat-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <circle
-                    cx="9"
-                    cy="8"
-                    r="3.2"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                  />
-                  <path
-                    d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M16 3.6a3.2 3.2 0 010 6.3M16.5 14.6c2.1.7 3.5 2.5 4 4.4"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <h3>Staff Roles</h3>
-              <p>
-                Give cashiers and managers exactly the access they need.
-              </p>
-            </article>
-
-            <article
-              class="feat-card feat-card--amber reveal"
-              style="--reveal-delay: 300ms"
-            >
-              <span class="feat-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M6 9a6 6 0 1112 0c0 5 2 6 2 6H4s2-1 2-6z"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.3 19a2 2 0 003.4 0"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <h3>Daily Alerts</h3>
-              <p>
-                Get told what&rsquo;s low before a customer asks for it.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ 6. HOW IT WORKS ============ -->
-      <section class="steps" id="how-it-works">
-        <div class="container steps-inner">
-          <div class="steps-copy">
-            <p class="eyebrow">How it works</p>
-            <h2 class="display section-title">
-              Ringing sales before the day is over.
-            </h2>
-            <p class="section-sub">
-              Three steps. Most shops are on their own till the same day.
-            </p>
-            <a
-              class="btn btn-cta steps-cta"
-              href="https://app.stockdeskinventory.com/signup"
-              >Start free</a
-            >
-          </div>
-
-          <div class="step-cards">
-            <article class="step-card reveal" style="--reveal-delay: 0ms">
-              <span class="step-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M4 10l1.5-5h13L20 10"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M5 10v9a1 1 0 001 1h12a1 1 0 001-1v-9"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M9 20v-5h6v5"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3 10h18"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <h3>Connect your shop</h3>
-              <p>
-                Add your products, staff, and shop details. Set up takes
-                minutes.
-              </p>
-            </article>
-
-            <article
-              class="step-card step-card--amber reveal"
-              style="--reveal-delay: 100ms"
-            >
-              <span class="step-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M3 12h4l2.5-6 4 12L16 12h5"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <h3>Track stock &amp; sales live</h3>
-              <p>
-                Every sale and stock movement updates your dashboard
-                automatically.
-              </p>
-            </article>
-
-            <article class="step-card reveal" style="--reveal-delay: 200ms">
-              <span class="step-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M6 9a6 6 0 1112 0c0 5 2 6 2 6H4s2-1 2-6z"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.3 19a2 2 0 003.4 0"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <h3>Act on daily alerts</h3>
-              <p>
-                Know what&rsquo;s low and what&rsquo;s moving before it becomes
-                a problem.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ 6.5 ROLES & ACCESS ============ -->
-      <section class="roles" id="roles" aria-labelledby="roles-title">
-        <div class="container">
-          <div class="section-head roles-head">
-            <p class="eyebrow">Role-based access</p>
-            <h2 class="display section-title" id="roles-title">
-              Everyone sees the right thing. Nobody sees too much.
-            </h2>
-            <p class="section-sub">
-              Every staff member signs in with their own login and gets a view
-              matched to their job, owner, cashier, or stockist. No shared
-              passwords, and every sale is tied to the person who made it.
-            </p>
-          </div>
-
-          <div class="roles-grid reveal">
-            <article class="role-card role-card--owner">
-              <span class="role-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <h3>Owner / Admin</h3>
-              <p>
-                The full picture: cost, margin, all branches, every staff
-                member, and the complete books. Only the owner sees money
-                coming in and what it cost to make it.
-              </p>
-              <ul class="role-list">
-                <li>Cost, margin &amp; profit</li>
-                <li>All locations &amp; staff</li>
-                <li>Full reports &amp; permissions</li>
-              </ul>
-            </article>
-
-            <article class="role-card role-card--cashier">
-              <span class="role-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M6 3h12v18l-2-1.5L14 21l-2-1.5L10 21l-2-1.5L6 21V3z"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M9.5 8h5M9.5 12h5"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <h3>Cashier</h3>
-              <p>
-                Just the till: ring sales fast and see the day&rsquo;s totals,
-                without cost or margin. A cashier can&rsquo;t change prices or
-                see what the shop paid for stock.
-              </p>
-              <ul class="role-list">
-                <li>Ring sales &amp; issue receipts</li>
-                <li>See stock levels to sell</li>
-                <li>No cost or margin</li>
-              </ul>
-            </article>
-
-            <article class="role-card role-card--stockist">
-              <span class="role-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M4 10l1.5-5h13L20 10"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M5 10v9a1 1 0 001 1h12a1 1 0 001-1v-9"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M9 20v-5h6v5"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3 10h18"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <h3>Stockist</h3>
-              <p>
-                Keep shelves honest: receive goods, record purchases, and fix
-                stock levels, without touching the till or the money.
-              </p>
-              <ul class="role-list">
-                <li>Receive stock &amp; purchases</li>
-                <li>Adjust inventory levels</li>
-                <li>No till or cash access</li>
-              </ul>
-            </article>
-          </div>
-
-          <!-- multi-tenant / branches -->
-          <div class="branches reveal">
-            <div class="branches-copy">
-              <p class="eyebrow branches-eyebrow">Multi-location</p>
-              <h3 class="branches-title">
-                One account. Every branch you run.
-              </h3>
-              <p class="branches-text">
-                Own several shops? StockDesk Inventory keeps them all under one
-                account, each with its own till, stock, staff, and roles. See
-                every branch from the owner view, or give a manager access to
-                just their own counter. Add a location whenever the shop grows.
-              </p>
-            </div>
-            <ul class="branches-list">
-              <li>
-                <span class="branch-check" aria-hidden="true">
-                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-                Separate till, stock &amp; roles per location
-              </li>
-              <li>
-                <span class="branch-check" aria-hidden="true">
-                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-                Compare sales across every branch
-              </li>
-              <li>
-                <span class="branch-check" aria-hidden="true">
-                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-                One bill, not one per till
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ 7. TESTIMONIALS ============ -->
-      <section class="voices" id="voices">
-        <div class="container">
-          <div class="section-head voices-head">
-            <p class="eyebrow">From the shop floor</p>
-            <h2 class="display section-title">
-              What the people behind the counters say.
-            </h2>
-          </div>
-
-          <div class="quotes reveal" id="quotes">
-            <div class="quotes-stage">
-              <figure class="quote is-active" aria-hidden="false">
-                <span class="quote-icon" aria-hidden="true">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M4 5h16a2 2 0 012 2v8a2 2 0 01-2 2H9l-4 4v-4H4a2 2 0 01-2-2V7a2 2 0 012-2z"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 10.5h8M8 13.5h5"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </span>
-                <blockquote>
-                  <p>
-                    We used to close some evenings not knowing if we&rsquo;d
-                    made money or lost it. Now the numbers are just there,
-                    updated as we sell. It&rsquo;s changed how confidently we
-                    make decisions at GSM Technologies.
-                  </p>
-                </blockquote>
-                <figcaption>
-                  <span class="quote-name">Matovu Jabber Saidi</span>
-                  <span class="quote-company">GSM Technologies</span>
-                </figcaption>
-              </figure>
-
-              <figure class="quote" aria-hidden="true">
-                <span class="quote-icon" aria-hidden="true">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M4 5h16a2 2 0 012 2v8a2 2 0 01-2 2H9l-4 4v-4H4a2 2 0 01-2-2V7a2 2 0 012-2z"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 10.5h8M8 13.5h5"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </span>
-                <blockquote>
-                  <p>
-                    Phones and parts move fast, and mistakes used to cost us
-                    real money. With StockDesk, stock and checkout stay in sync
-                    without anyone chasing it manually. It runs quietly in the
-                    background and just works.
-                  </p>
-                </blockquote>
-                <figcaption>
-                  <span class="quote-name">Nkalubo Ibra</span>
-                  <span class="quote-company"
-                    >Brinez Phone Repair Services</span
-                  >
-                </figcaption>
-              </figure>
-
-              <figure class="quote" aria-hidden="true">
-                <span class="quote-icon" aria-hidden="true">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M4 5h16a2 2 0 012 2v8a2 2 0 01-2 2H9l-4 4v-4H4a2 2 0 01-2-2V7a2 2 0 012-2z"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 10.5h8M8 13.5h5"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </span>
-                <blockquote>
-                  <p>
-                    I&rsquo;ve watched StockDesk go from an idea to something
-                    real shop owners rely on every day. Watching GSM
-                    Technologies and Brinez run their daily operations on it is
-                    proof this is built the way real businesses actually work.
-                  </p>
-                </blockquote>
-                <figcaption>
-                  <span class="quote-name">Disan Nkangi</span>
-                  <span class="quote-company">Grittrix Technologies</span>
-                </figcaption>
-              </figure>
-            </div>
-
-            <div
-              class="quotes-dots"
-              id="quotesDots"
-              role="group"
-              aria-label="Choose testimonial"
-            ></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ 8. CASE STUDIES ============ -->
-      <section class="case-studies" aria-labelledby="case-studies-title">
-        <div class="container">
-          <div class="section-head case-studies-head">
-            <p class="eyebrow">What real shops see</p>
-            <h2 class="display section-title" id="case-studies-title">
-              The change behind the counter.
-            </h2>
-            <p class="section-sub">
-              Named shops already ringing sales on StockDesk, not
-              anonymous quotes.
-            </p>
-          </div>
-
-          <div class="case-grid reveal">
-            <article class="case-card">
-              <div class="case-header">
-                <span class="case-badge mono">GSM Technologies</span>
-                <span class="case-tag mono">Phone &amp; accessory shop</span>
-              </div>
-              <p class="case-quote">
-                &ldquo;Before StockDesk, we were juggling stock counts and receipts.
-                Now the shop tells us when we&rsquo;re low before we lose the sale.&rdquo;
-              </p>
-              <div class="case-metrics">
-                <div>
-                  <strong class="mono">Same day</strong>
-                  <span>live stock after setup</span>
-                </div>
-                <div>
-                  <strong class="mono">Owner view</strong>
-                  <span>sales &amp; stock in one place</span>
-                </div>
-              </div>
-              <p class="case-attr">Matovu Jabber Saidi · GSM Technologies</p>
-            </article>
-
-            <article class="case-card case-card--accent">
-              <div class="case-header">
-                <span class="case-badge mono">Brinez Repair</span>
-                <span class="case-tag mono">Repair &amp; parts counter</span>
-              </div>
-              <p class="case-quote">
-                &ldquo;We moved from manual notes to live movement. The dashboard tells
-                us exactly what sold and what needs restocking the same day.&rdquo;
-              </p>
-              <div class="case-metrics">
-                <div>
-                  <strong class="mono">Parts tracked</strong>
-                  <span>as they leave the till</span>
-                </div>
-                <div>
-                  <strong class="mono">No guesswork</strong>
-                  <span>on what is left</span>
-                </div>
-              </div>
-              <p class="case-attr">Nkalubo Ibra · Brinez Phone Repair Services</p>
-            </article>
-
-            <article class="case-card">
-              <div class="case-header">
-                <span class="case-badge mono">Fabric &amp; retail</span>
-                <span class="case-tag mono">Retail counters</span>
-              </div>
-              <p class="case-quote">
-                &ldquo;We stopped losing sales to slow restocking. Products that were
-                low now get attention before customers ask.&rdquo;
-              </p>
-              <div class="case-metrics">
-                <div>
-                  <strong class="mono">Low-stock alerts</strong>
-                  <span>before the shelf empties</span>
-                </div>
-                <div>
-                  <strong class="mono">Local pricing</strong>
-                  <span>in UGX today</span>
-                </div>
-              </div>
-              <p class="case-attr">Retail counters using StockDesk daily</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ 9. FAQ ============ -->
-      <section class="faq" id="faq">
-        <div class="container faq-inner">
-          <div class="section-head faq-head">
-            <p class="eyebrow">Straight answers</p>
-            <h2 class="display section-title">
-              Questions shop owners actually ask.
-            </h2>
-          </div>
-
-          <div class="faq-list">
-            <details class="faq-item reveal">
-              <summary>How long does setup actually take?</summary>
-              <div class="faq-body">
-                <p>
-                  Most shops are ringing sales on their own till the same day.
-                  Add the items you sell, set a reorder point on the ones
-                  you&rsquo;re always running low on, and hand each staff member
-                  their own sign-in. The whole thing reads like your counter,
-                  not a spreadsheet.
-                </p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>Do staff need their own accounts?</summary>
-              <div class="faq-body">
-                <p>
-                  Yes, and that&rsquo;s the point. A cashier signs in and rings
-                  sales; a stockist signs in and receives goods. You, the owner,
-                  see cost, margin, and the full books. Nobody shares a login,
-                  and every sale is tied to the person who made it.
-                </p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>What does &ldquo;live stock&rdquo; really mean?</summary>
-              <div class="faq-body">
-                <p>
-                  It means the number on the screen moves when the till moves.
-                  Ring a sale of Ankara 6y and the stock figure for Ankara 6y
-                  drops with it, no end-of-day recount. When it passes your
-                  minimum, StockDesk Inventory raises the low-stock alert
-                  automatically.
-                </p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>Is there a free trial?</summary>
-              <div class="faq-body">
-                <p>
-                  Start free, no card, no expiry date to remember. Ring real
-                  sales on a free shop, and upgrade when you want margin,
-                  reports, and your full staff on it.
-                </p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>
-                I keep records in a receipt book today. Can I move?
-              </summary>
-              <div class="faq-body">
-                <p>
-                  Yes, at your pace. Put your current items into StockDesk
-                  Inventory as you sell them, the products you ring today become
-                  your ledger. You don&rsquo;t need to type in years of old
-                  books to start; just start the till.
-                </p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>How do I pay for a plan?</summary>
-              <div class="faq-body">
-                <p>
-                  Pay monthly in UGX with <strong>MTN Mobile Money</strong> or
-                  <strong>Airtel Money</strong>. No international card required.
-                  Cash sales at your till stay cash, StockDesk only
-                  tracks what you sell; customer payment method is up to you.
-                </p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>Does it work when the network is slow or drops?</summary>
-              <div class="faq-body">
-                <p>
-                  Yes. Ring sales on a slow connection; when the line comes
-                  back, stock and sales sync automatically. Built for real
-                  counters where data is not always perfect, not only for
-                  fibre offices.
-                </p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>Can I print or share a receipt?</summary>
-              <div class="faq-body">
-                <p>
-                  Yes. After a sale you can print a thermal receipt or share a
-                  simple digital slip. Your shop still looks professional even
-                  when the customer only wants a quick proof of purchase.
-                </p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>Is the product only in English?</summary>
-              <div class="faq-body">
-                <p>
-                  The app is in clear English today so any cashier can learn it
-                  fast. Support is available on WhatsApp in English and Luganda
-                  when you need a human.
-                </p>
-              </div>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ COMPARE ============ -->
-      <section class="compare" id="compare" aria-labelledby="compare-title">
-        <div class="container">
-          <div class="section-head compare-head">
-            <p class="eyebrow">Receipt book vs StockDesk</p>
-            <h2 class="display section-title" id="compare-title">
-              Why shops leave the notebook behind.
-            </h2>
-          </div>
-          <div class="compare-table-wrap reveal">
-            <table class="compare-table">
-              <thead>
-                <tr>
-                  <th scope="col">At the counter</th>
-                  <th scope="col">Receipt book / spreadsheet</th>
-                  <th scope="col">StockDesk</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Know what is left</th>
-                  <td>Count at closing, if you remember</td>
-                  <td>Live stock with every sale</td>
-                </tr>
-                <tr>
-                  <th scope="row">Low stock</th>
-                  <td>Customer asks, shelf is empty</td>
-                  <td>Alert before you run out</td>
-                </tr>
-                <tr>
-                  <th scope="row">Who sold what</th>
-                  <td>Shared book, unclear</td>
-                  <td>Each staff has their own login</td>
-                </tr>
-                <tr>
-                  <th scope="row">Day totals</th>
-                  <td>Add by hand, easy to miss</td>
-                  <td>Sales &amp; UGX totals as you ring</td>
-                </tr>
-                <tr>
-                  <th scope="row">Owner away from shop</th>
-                  <td>Wait for a call or photo</td>
-                  <td>Check from any phone</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ ABOUT / FOUNDERS ============ -->
-      <section class="about" id="about" aria-labelledby="about-title">
-        <div class="container">
-          <div class="section-head about-head">
-            <p class="eyebrow">About</p>
-            <h2 class="display section-title" id="about-title">
-              The people behind the till.
-            </h2>
-            <p class="section-sub">
-              Starting in Uganda, built for real retail counters, in
-              collaboration with Grittrix Technologies.
-            </p>
-          </div>
-
-          <div class="founders-grid reveal">
-            <article class="founder-card">
-              <div class="founder-avatar" aria-hidden="true">ML</div>
-              <div class="founder-body">
-                <h3 class="founder-name">Mahad Ishaaq Lubega</h3>
-                <p class="founder-role mono">Founder</p>
-                <p class="founder-bio">
-                  Building StockDesk so shop owners can see stock and sales
-                  clearly, without chasing books at closing time.
-                </p>
-              </div>
-            </article>
-            <article class="founder-card">
-              <div class="founder-avatar" aria-hidden="true">DN</div>
-              <div class="founder-body">
-                <h3 class="founder-name">Disan Nkangi</h3>
-                <p class="founder-role mono">Founder</p>
-                <p class="founder-bio">
-                  Partnering on product and engineering so the till experience
-                  works the way real shops actually run.
-                </p>
-              </div>
-            </article>
-          </div>
-
-          <div class="partner-card partner-card--inline reveal">
-            <a
-              class="partner-logo-wrap"
-              href="https://grittrix.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="partner-logo"
-                src="public/grittrix-logo.png"
-                alt="Grittrix Technologies"
-                width="40"
-                height="40"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="partner-copy">
-              <p class="eyebrow">A collaboration</p>
-              <p class="partner-inline-text">
-                Design &amp; engineering with
-                <strong>Grittrix Technologies</strong>
-                ·
-                <a
-                  class="partner-link"
-                  href="https://grittrix.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >grittrix.com</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ FINAL CTA ============ -->
-      <section class="cta" id="start-free">
-        <div class="container">
-          <div class="cta-band">
-            <p class="eyebrow cta-eyebrow">StockDesk Inventory</p>
-            <h2 class="display cta-title">
-              Know what&rsquo;s low before you run out.
-            </h2>
-            <p class="cta-sub">
-              Shop owners ring their whole day on StockDesk Inventory, from the
-              till to the phone in their pocket. Your shop can too, today.
-            </p>
-            <div class="cta-actions">
-              <a
-                class="btn btn-cta btn-lg cta-btn"
-                href="https://app.stockdeskinventory.com/signup"
-                >Start free</a
-              >
-              <a
-                class="btn btn-wa btn-lg"
-                href="https://wa.me/256742226839?text=Hi%20StockDesk%20%E2%80%94%20I%27d%20like%20to%20start%20my%20shop."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Chat on WhatsApp
-              </a>
-            </div>
-            <p class="cta-note mono">
-              No card · MTN MoMo &amp; Airtel Money · Live stock from the first till
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <a
-      class="wa-float"
-      href="https://wa.me/256742226839?text=Hi%20StockDesk%20%E2%80%94%20I%27d%20like%20help%20getting%20started."
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Chat on WhatsApp"
-    >
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      <span class="wa-float-label">WhatsApp</span>
-    </a>
-
-    <!-- ============ 10. FOOTER ============ -->
-    <footer class="footer">
-      <div class="container footer-inner">
-        <div class="footer-brand">
-          <a class="brand" href="#top" aria-label="StockDesk Inventory home">
-            <img
-              class="brand-logo"
-              src="public/logo.png"
-              alt=""
-              width="40"
-              height="28"
-            />
-            <span class="brand-name">StockDesk Inventory</span>
+        <div class="teaser-grid reveal">
+          <a class="teaser-card" href="pricing.html#pricing">
+            <span class="teaser-name">Starter</span>
+            <span class="teaser-price mono">UGX 15,000<small>/month</small></span>
+            <span class="teaser-desc">1 location &middot; up to 200 products &middot; 2 staff logins</span>
           </a>
-          <p class="footer-tag">
-            The inventory and sales desk for retail shops. Starting in Uganda,
-            built at the till, priced for a shop that works.
-          </p>
-          <a class="footer-partner" href="https://grittrix.com" target="_blank" rel="noopener noreferrer">
-            <span>In collaboration with</span>
-            <img src="public/grittrix-logo.png" alt="Grittrix Technologies" width="40" height="40" loading="lazy" decoding="async" />
+          <a class="teaser-card teaser-card--featured" href="pricing.html#pricing">
+            <span class="teaser-name">Growth <span class="teaser-badge mono">Recommended</span></span>
+            <span class="teaser-price mono">UGX 30,000<small>/month</small></span>
+            <span class="teaser-desc">Up to 3 locations &middot; unlimited products &middot; up to 8 staff logins</span>
+          </a>
+          <a class="teaser-card" href="pricing.html#pricing">
+            <span class="teaser-name">Business</span>
+            <span class="teaser-price mono">UGX 90,000<small>/month</small></span>
+            <span class="teaser-desc">Unlimited locations &middot; unlimited staff logins</span>
           </a>
         </div>
 
-        <div class="footer-cols">
-          <nav class="footer-col" aria-label="Product">
-            <h4>Product</h4>
-            <a href="#product">The desk</a>
-            <a href="#pillars">Live inventory</a>
-            <a href="#compare">vs receipt book</a>
-            <a href="pricing.html">Pricing</a>
-          </nav>
-          <nav class="footer-col" aria-label="Company">
-            <h4>Company</h4>
-            <a href="#how-it-works">How it works</a>
-            <a href="#roles">Roles &amp; access</a>
-            <a href="#voices">Shop owners</a>
-            <a href="#about">About</a>
-            <a href="#faq">FAQ</a>
-          </nav>
-          <div class="footer-col">
-            <h4>Contact</h4>
-            <a href="mailto:hello@stockdeskinventory.com">hello@stockdeskinventory.com</a>
-            <a class="footer-wa" href="https://wa.me/256742226839" target="_blank" rel="noopener noreferrer">
-              <svg class="wa-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              +256 742 226 839
-            </a>
-            <a class="footer-wa" href="https://wa.me/256756693840" target="_blank" rel="noopener noreferrer">
-              <svg class="wa-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              +256 756 693 840
-            </a>
-            <span class="footer-addr">Based in Uganda</span>
-          </div>
+        <p class="teaser-more"><a href="pricing.html">Compare plans in full <span aria-hidden="true">&rarr;</span></a></p>
+      </div>
+    </section>
+
+    <!-- ============ 8. FAQ ============ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-inner">
+        <div class="section-head faq-head">
+          <p class="eyebrow">Straight answers</p>
+          <h2 class="display section-title" id="faq-title">Questions shop owners actually ask.</h2>
         </div>
 
-        <div class="footer-bottom">
-          <span
-            >&copy; <span id="year">2026</span> StockDesk Inventory. Made in
-            Uganda.</span
-          >
-          <div class="footer-bottom-links">
-            <a href="privacy.html">Privacy</a>
-            <a href="terms.html">Terms</a>
-            <a
-              class="footer-login"
-              href="https://app.stockdeskinventory.com/login"
-              >Log in</a
-            >
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>How long does setup take?</summary>
+            <div class="faq-body"><p>Most shops are ringing sales on their own till the same day. Add the items you sell, set a minimum on the ones you&rsquo;re always running low on, and give each staff member their own sign-in. It reads like your counter, not a spreadsheet.</p></div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Is it free to start?</summary>
+            <div class="faq-body"><p>Yes. Sign up with no card, add your products, and ring real sales before you pay anything. Plans start at UGX 15,000 a month when you&rsquo;re ready.</p></div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Do staff need their own accounts?</summary>
+            <div class="faq-body"><p>Yes, and that&rsquo;s the point. A cashier signs in and rings sales; a stockist signs in and receives goods. You, the owner, see cost, margin, and the full books. Nobody shares a login, and every sale is tied to the person who made it.</p></div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>What does &ldquo;live stock&rdquo; really mean?</summary>
+            <div class="faq-body"><p>It means the number on the screen moves when the till moves. Ring a sale of Ankara 6y and the stock figure for Ankara 6y drops with it, with no end-of-day recount. When it passes your minimum, StockDesk raises the low-stock alert automatically.</p></div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>I keep records in a receipt book today. Can I move?</summary>
+            <div class="faq-body"><p>Yes, at your own pace. Add your current items to StockDesk as you sell them, and the products you ring today become your records. You don&rsquo;t need to type in years of old books to start. Just start the till.</p></div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>How do I pay for a plan?</summary>
+            <div class="faq-body"><p>Pay monthly in UGX with <strong>MTN Mobile Money</strong> or <strong>Airtel Money</strong>. No international card required. Cash sales at your till stay cash: StockDesk records the sale, and how your customer pays is up to you.</p></div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Does it work when the network is slow or drops?</summary>
+            <div class="faq-body"><p>Yes. Ring sales on a slow connection, and when the line comes back, stock and sales sync automatically. It&rsquo;s built for real counters where data isn&rsquo;t always perfect, not only for offices on fibre.</p></div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Can I print or share a receipt?</summary>
+            <div class="faq-body"><p>Yes. After a sale you can print a thermal receipt or share a simple digital slip, so your shop looks professional even when the customer only wants quick proof of purchase.</p></div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Is the product only in English?</summary>
+            <div class="faq-body"><p>The app is in clear English today so any cashier can learn it fast. When you need a person, support on WhatsApp is available in English and Luganda.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. ABOUT ============ -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head about-head">
+          <p class="eyebrow">About</p>
+          <h2 class="display section-title" id="about-title">The people behind the till.</h2>
+          <p class="section-sub">Starting in Uganda, built for real retail counters, in collaboration with Grittrix Technologies.</p>
+        </div>
+
+        <div class="founders-grid reveal">
+          <article class="founder-card">
+            <div class="founder-avatar" aria-hidden="true">ML</div>
+            <div class="founder-body">
+              <h3 class="founder-name">Mahad Ishaaq Lubega</h3>
+              <p class="founder-role mono">Founder</p>
+              <p class="founder-bio">Building StockDesk so shop owners can see stock and sales clearly, without chasing books at closing time.</p>
+            </div>
+          </article>
+          <article class="founder-card">
+            <div class="founder-avatar" aria-hidden="true">DN</div>
+            <div class="founder-body">
+              <h3 class="founder-name">Disan Nkangi</h3>
+              <p class="founder-role mono">Founder</p>
+              <p class="founder-bio">Leading product and engineering so the till works the way real shops actually run.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="partner-card reveal">
+          <a class="partner-logo-wrap" href="https://grittrix.com" target="_blank" rel="noopener noreferrer">
+            <img class="partner-logo" src="public/grittrix-logo.png" alt="Grittrix Technologies" width="28" height="28" loading="lazy" decoding="async">
+          </a>
+          <div class="partner-copy">
+            <p class="eyebrow">A collaboration</p>
+            <p class="partner-inline-text">Design &amp; engineering with <strong>Grittrix Technologies</strong> &middot; <a class="partner-link" href="https://grittrix.com" target="_blank" rel="noopener noreferrer">grittrix.com</a></p>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="app.js" defer></script>
-  </body>
+    <!-- ============ 10. FINAL CTA ============ -->
+    <section class="cta" id="start-free">
+      <div class="container">
+        <div class="cta-band">
+          <p class="eyebrow cta-eyebrow">StockDesk Inventory</p>
+          <h2 class="display cta-title">Know what&rsquo;s low before you run out.</h2>
+          <p class="cta-sub">Shop owners run their whole day on StockDesk, from the till to the phone in their pocket. Your shop can start today.</p>
+          <div class="cta-actions">
+            <a class="btn btn-cta btn-lg cta-btn" href="https://app.stockdeskinventory.com/signup" data-track="Signup" data-loc="final-cta">Start free</a>
+            <a class="btn btn-wa btn-lg" href="https://wa.me/256742226839?text=Hi%20StockDesk%20%E2%80%94%20I%27d%20like%20to%20start%20my%20shop." target="_blank" rel="noopener noreferrer" data-track="WhatsApp" data-loc="final-cta">
+              <svg class="wa-icon" width="18" height="18" aria-hidden="true"><use href="#i-wa"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+          <p class="cta-note mono">No card &middot; MTN MoMo &amp; Airtel Money &middot; Live stock from your first sale</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="wa-float" href="https://wa.me/256742226839?text=Hi%20StockDesk%20%E2%80%94%20I%27d%20like%20help%20getting%20started." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" data-track="WhatsApp" data-loc="float">
+    <svg width="28" height="28" aria-hidden="true"><use href="#i-wa"/></svg>
+    <span class="wa-float-label">WhatsApp</span>
+  </a>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="StockDesk Inventory home">
+          <img class="brand-logo" src="public/logo.svg" alt="" width="28" height="28">
+          <span class="brand-name">StockDesk Inventory</span>
+        </a>
+        <p class="footer-tag">The inventory and sales desk for retail shops. Starting in Uganda, built at the till, priced for a shop that works.</p>
+        <a class="footer-partner" href="https://grittrix.com" target="_blank" rel="noopener noreferrer">
+          <span>In collaboration with</span>
+          <img src="public/grittrix-logo.png" alt="Grittrix Technologies" width="22" height="22" loading="lazy" decoding="async">
+        </a>
+      </div>
+
+      <div class="footer-cols">
+        <nav class="footer-col" aria-label="Product">
+          <h2>Product</h2>
+          <a href="#product">The desk</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#compare">vs receipt book</a>
+          <a href="pricing.html">Pricing</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company">
+          <h2>Company</h2>
+          <a href="#roles">Roles &amp; access</a>
+          <a href="#voices">Shop owners</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="footer-col">
+          <h2>Contact</h2>
+          <a href="mailto:hello@stockdeskinventory.com">hello@stockdeskinventory.com</a>
+          <a class="footer-wa" href="https://wa.me/256742226839" target="_blank" rel="noopener noreferrer" data-track="WhatsApp" data-loc="footer">
+            <svg class="wa-icon" width="16" height="16" aria-hidden="true"><use href="#i-wa"/></svg>
+            +256 742 226 839
+          </a>
+          <a class="footer-wa" href="https://wa.me/256756693840" target="_blank" rel="noopener noreferrer" data-track="WhatsApp" data-loc="footer">
+            <svg class="wa-icon" width="16" height="16" aria-hidden="true"><use href="#i-wa"/></svg>
+            +256 756 693 840
+          </a>
+          <span class="footer-addr">Based in Uganda</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> StockDesk Inventory. Made in Uganda.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a class="footer-login" href="https://app.stockdeskinventory.com/login">Log in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
 </html>
